@@ -47,8 +47,8 @@ describe('CalculService', () => {
       const spyMul = sinon.spy(CalculService, 'multiplication');
       const spyDiv = sinon.spy(CalculService, 'division');
       let result = CalculService.pourcentage(0.2, 20);
-      assert(spyDiv.calledOnce());
-      assert(spyMul.calledOnce());
+      assert(spyDiv.calledOnce);
+      assert(spyMul.calledOnce);
       assert.strictEqual(result, 0.04);
     })
   });
